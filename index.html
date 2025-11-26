@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Quarterly Earnings Report</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Slide 1: Title Slide -->
+				<section>
+					<h2>Quarterly Earnings Report</h2>
+					<p>
+						<small>Presented by: <a href="mailto:24f1002750@ds.study.iitm.ac.in">24f1002750@ds.study.iitm.ac.in</a></small>
+					</p>
+                    <aside class="notes">
+                        Welcome everyone to the quarterly earnings report. I am excited to share our progress.
+                    </aside>
+				</section>
+
+				<!-- Slide 2: Markdown Slide -->
+				<section data-markdown>
+					<textarea data-template>
+						## Executive Summary
+						
+						- Revenue up by **15%**
+						- *New market expansion* successful
+						- Cost reduction initiatives on track
+                        
+                        Note:
+                        Here is the high-level summary of our performance this quarter.
+					</textarea>
+				</section>
+
+				<!-- Slide 3: Fragments -->
+				<section>
+					<h2>Key Highlights</h2>
+					<ul>
+						<li class="fragment">Record-breaking Q3 Sales</li>
+						<li class="fragment">Strategic Partnership with TechCorp</li>
+						<li class="fragment">Launch of "FinFuture" Platform</li>
+					</ul>
+                    <aside class="notes">
+                        Let's dive into the key highlights. First, our sales figures...
+                    </aside>
+				</section>
+
+				<!-- Slide 4: Code Sample -->
+				<section>
+					<h2>Financial Modeling</h2>
+					<pre><code data-trim data-noescape class="python">
+def calculate_roi(revenue, cost):
+    """
+    Calculate Return on Investment.
+    """
+    net_profit = revenue - cost
+    roi = (net_profit / cost) * 100
+    return roi
+
+# Q3 Data
+q3_revenue = 5000000
+q3_cost = 3500000
+print(f"Q3 ROI: {calculate_roi(q3_revenue, q3_cost)}%")
+					</code></pre>
+                    <aside class="notes">
+                        We use advanced modeling to track our ROI in real-time.
+                    </aside>
+				</section>
+
+				<!-- Slide 5: Math Equations -->
+				<section>
+					<h2>Growth Formula</h2>
+					<p>
+						The compound annual growth rate (CAGR) is calculated as:
+					</p>
+					\[ CAGR = \left( \frac{EV}{BV} \right)^{\frac{1}{n}} - 1 \]
+					<p>
+                        Where:
+                        <br>
+                        <small>$EV$ = Ending Value</small><br>
+                        <small>$BV$ = Beginning Value</small><br>
+                        <small>$n$ = Number of years</small>
+                    </p>
+                    <aside class="notes">
+                        This formula guides our long-term growth projections.
+                    </aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/notes/notes.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/markdown/markdown.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/highlight.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                // Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
